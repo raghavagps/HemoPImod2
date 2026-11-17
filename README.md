@@ -28,6 +28,13 @@ a lead.
 📖 Please cite relevant content for complete details, including the algorithm
 behind the approach.
 
+### Zenodo
+coming soon...
+
+---
+### 🖼️ IonNTxPred Workflow Representation
+![IonNTxPred Workflow](data/Figure 1.jpg)
+
 ---
 
 ## 🧪 Quick Start
