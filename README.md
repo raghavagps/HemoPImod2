@@ -32,9 +32,9 @@ behind the approach.
 coming soon...
 
 ---
-### 🖼️ IonNTxPred Workflow Representation
-![IonNTxPred Workflow](data/Figure 1.jpg)
-
+### 🖼️ HemoPI-MOD2 Workflow Representation
+![HemoPI-MOD2 Workflow](data/Figure.jpg)
+![PyPI Logo](data/PyPI_logo.svg.png)
 ---
 
 ## 🧪 Quick Start
