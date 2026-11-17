@@ -33,8 +33,7 @@ coming soon...
 
 ---
 ### 🖼️ HemoPI-MOD2 Workflow Representation
-![HemoPI-MOD2 Workflow](data/Figure.jpg)
-![PyPI Logo](data/PyPI_logo.svg.png)
+![HemoPI-MOD2 Workflow](data/Figure1.jpg)
 ---
 
 ## 🧪 Quick Start
