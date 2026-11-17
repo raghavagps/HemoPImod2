@@ -1,0 +1,19 @@
+# HemoPI-MOD2 standalone — Python dependencies  (Python 3.9 or newer)
+#
+# scikit-learn and xgboost are PINNED on purpose. The three model files in
+# models/ were fitted with scikit-learn 1.6.1, and chemical_model.pkl holds a
+# serialized XGBoost regressor. Other versions usually load, but are not
+# guaranteed to reproduce the published numbers.
+
+numpy>=1.23,<2.0
+pandas>=1.5
+scipy>=1.9
+joblib>=1.2
+scikit-learn==1.6.1
+xgboost==3.2.0
+
+# Chemical (-m 2) and Structure (-m 3) models only.
+# Mordred 1.2.0 needs networkx<3.
+rdkit>=2022.9
+mordred==1.2.0
+networkx>=2.8,<3.0

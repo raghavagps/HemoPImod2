@@ -1,13 +1,12 @@
 # HemoPI-MOD2
 
-Prediction of Hemolytic Potency (HC50) of Chemically Modified Peptides
+A computational framework for predicting and designing **hemolytic peptides**,
+covering natural sequences as well as chemically modified ones, using
+sequence-based, chemical-descriptor-based and structure-based machine learning
+models.
 
 ---
 
-## 📚 Reference
-**Rathore AS et al.** _HemoPI-MOD2: Prediction of Hemolytic Potency (HC50) of Chemically Modified Peptides._ **#Coming Soon#**
-
----
 ## 📌 Introduction
 
 **HemoPI-MOD2** is developed to help researchers estimate the hemolytic
@@ -28,12 +27,6 @@ a lead.
 📖 Please cite relevant content for complete details, including the algorithm
 behind the approach.
 
-### Zenodo
-coming soon...
-
----
-### 🖼️ HemoPI-MOD2 Workflow Representation
-![HemoPI-MOD2 Workflow](data/Figure1.jpg)
 ---
 
 ## 🧪 Quick Start
@@ -61,17 +54,6 @@ The three model files are already in `models/`; nothing needs downloading.
 ---
 
 ## 🛠️ Installation Options
-
-###  🧰 Pip Installation  ![PyPI Logo](data/PyPI_logo.svg.png)
-To install HemoPI-MOD2 via PIP, run:
-```bash
-pip install hemopimod2
-```
-To check available options, type:
-```bash
-hemopimod2 -h
-```
-
 
 ### 🔹 Standalone Installation
 
@@ -314,4 +296,3 @@ neither is practical.
 🔗 Visit: [HemoPI-MOD2 Web Server](https://webs.iiitd.edu.in/raghava/hemopimod2)
 
 (C) 2026 Dr. G.P.S. Raghava
-
