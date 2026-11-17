@@ -56,7 +56,7 @@ The three model files are already in `models/`; nothing needs downloading.
 
 ## 🛠️ Installation Options
 
-###  🧰 Pip Installation  ![PyPI Logo](images/PyPI_logo.svg.png)
+###  🧰 Pip Installation  ![PyPI Logo](data/PyPI_logo.svg.png)
 To install HemoPI-MOD2 via PIP, run:
 ```bash
 pip install hemopimod2
