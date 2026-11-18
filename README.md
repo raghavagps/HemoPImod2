@@ -2,7 +2,7 @@
 
 # 🧬 HemoPI-MOD2
 
-**Prediction of Hemolytic Potency ($\text{HC}_{50}$) & Design of Chemically Modified Peptides**
+**Prediction of Hemolytic Potency (HC50) & Design of Chemically Modified Peptides**
 
 [![Web Server](https://img.shields.io/badge/Web%20Server-IIIT--Delhi-blue?style=for-the-badge&logo=google-chrome)](https://webs.iiitd.edu.in/raghava/hemopimod2)
 [![Open In Colab](https://img.shields.io/badge/Colab-Open%20Demo-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/raghavagps/HemoPImod2/blob/main/HemoPIMOD2_Demo.ipynb)
