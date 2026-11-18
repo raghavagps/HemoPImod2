@@ -7,8 +7,8 @@
 [![Web Server](https://img.shields.io/badge/Web%20Server-IIIT--Delhi-blue?style=for-the-badge&logo=google-chrome)](https://webs.iiitd.edu.in/raghava/hemopimod2)
 [![Open In Colab](https://img.shields.io/badge/Colab-Open%20Demo-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/raghavagps/HemoPImod2/blob/main/HemoPIMOD2_Demo.ipynb)
 [![PyPI](https://img.shields.io/badge/PyPI-hemopimod2-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/hemopimod2/)
-[![Anaconda](https://img.shields.io/badge/Anaconda-raghavagps%2Fhemopimod2-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://anaconda.org/channels/drv01/packages/hemopimod2/overview)
-[![Docker](https://img.shields.io/badge/Docker-raghavagps%2Fhemopimod2-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/drv01/hemopimod2/general)
+[![Anaconda](https://img.shields.io/badge/Anaconda-drv01%2Fhemopimod2-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://anaconda.org/channels/drv01/packages/hemopimod2/overview)
+[![Docker](https://img.shields.io/badge/Docker-drv01%2Fhemopimod2-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/repository/docker/drv01/hemopimod2/general)
 [![Zenodo](https://img.shields.io/badge/Zenodo-Archive%20(Coming%20Soon)-024CAD?style=for-the-badge&logo=zenodo&logoColor=white)](#zenodo)
 
 </div>
@@ -28,8 +28,8 @@ Modified peptides are first-class input: N-terminal acetylation, C-terminal amid
 
 Three complementary models are offered—each taking a distinct view of the peptide—alongside a **Design** module that enumerates and scores every single-residue analogue of a lead candidate.
 
-* 🔗 **Web Server:** [https://webs.iiitd.edu.in/raghava/hemopimod2](https://webs.iiitd.edu.in/raghava/hemopimod2)
-* 📖 **Citation:** Please cite the publication above for complete details, including the underlying algorithms.
+- 🔗 **Web Server:** [https://webs.iiitd.edu.in/raghava/hemopimod2](https://webs.iiitd.edu.in/raghava/hemopimod2)
+- 📖 **Citation:** Please cite the publication above for complete details, including the underlying algorithms.
 
 ### Zenodo
 [![Zenodo](https://img.shields.io/badge/Zenodo-Coming%20Soon-024CAD?style=flat-square&logo=zenodo&logoColor=white)](#zenodo) *Coming soon...*
@@ -45,8 +45,8 @@ Access **HemoPI-MOD2** across multiple platforms depending on your workflow:
 | 🌐 **Web Server** | Interactive browser-based prediction & design (no installation) | [webs.iiitd.edu.in/raghava/hemopimod2](https://webs.iiitd.edu.in/raghava/hemopimod2) |
 | ☁️ **Google Colab** | Zero-setup cloud notebook demo & batch execution | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/raghavagps/HemoPImod2/blob/main/HemoPIMOD2_Demo.ipynb) |
 | 📦 **PyPI Package** | Fast command-line installation (`hemopimod2`) | [`pip install hemopimod2`](https://pypi.org/project/hemopimod2/) |
-| 🐍 **Anaconda** | Conda-based environment & package management | [`anaconda.org/raghavagps/hemopimod2`](https://anaconda.org/hemopimod2) |
-| 🐳 **Docker Hub** | Containerized execution on Linux / macOS / Windows | [`docker pull raghavagps/hemopimod2`](https://hub.docker.com/r/hemopimod2) |
+| 🐍 **Anaconda** | Conda-based environment & package management | [`conda install drv01::hemopimod2`](https://anaconda.org/channels/drv01/packages/hemopimod2/overview) |
+| 🐳 **Docker Hub** | Containerized execution on Linux / macOS / Windows | [`docker pull drv01/hemopimod2:latest`](https://hub.docker.com/repository/docker/drv01/hemopimod2/general) |
 | 🏛️ **Zenodo** | Permanent archival release & dataset snapshot | *Coming soon...* |
 
 ---
@@ -63,7 +63,7 @@ Access **HemoPI-MOD2** across multiple platforms depending on your workflow:
 
 ```bash
 # 1. Clone or unpack the standalone repository
-git clone https://github.com/raghavagps/hemopimod2.git
+git clone https://github.com/raghavagps/HemoPImod2.git
 cd hemopimod2
 
 # 2. Set up the environment (conda recommended)
@@ -103,7 +103,7 @@ hemopimod2 -h
 
 Install **HemoPI-MOD2** via Conda from Anaconda Cloud:
 ```bash
-conda install -c raghavagps hemopimod2
+conda install drv01::hemopimod2
 ```
 Or create an isolated environment using the repository's `environment.yml`:
 ```bash
@@ -117,8 +117,9 @@ conda activate HemoPI-MOD2
 
 Pull and run the pre-built container image from Docker Hub:
 ```bash
-docker pull raghavagps/hemopimod2
-docker run --rm -v $(pwd):/data raghavagps/hemopimod2 -i /data/example_sequence.fasta -o /data/output.csv -j 1 -m 1
+docker pull drv01/hemopimod2:latest
+
+docker run --rm -v $(pwd):/data drv01/hemopimod2:latest -i /data/example_sequence.fasta -o /data/output.csv -j 1 -m 1
 ```
 
 ---
@@ -126,7 +127,7 @@ docker run --rm -v $(pwd):/data raghavagps/hemopimod2 -i /data/example_sequence.
 ### ☁️ Google Colab (No Local Installation)
 
 Run the complete **HemoPI-MOD2** interactive demo notebook directly in your browser on free cloud compute:
-* 👉 **[Open HemoPI-MOD2 Demo in Google Colab](https://colab.research.google.com/github/raghavagps/HemoPImod2/blob/main/HemoPIMOD2_Demo.ipynb)**
+- 👉 **[Open HemoPI-MOD2 Demo in Google Colab](https://colab.research.google.com/github/raghavagps/HemoPImod2/blob/main/HemoPIMOD2_Demo.ipynb)**
 
 ---
 
@@ -160,8 +161,8 @@ pip install -r requirements.txt
 
 ## ⚠️ Important Notes
 
-* **Pinned Versions:** `scikit-learn` (`1.6.1`) and `xgboost` (`3.2.0`) are pinned intentionally. The serialized models in `models/` were trained with these exact versions; newer or older releases may load, but are not guaranteed to reproduce published predictions.
-* **Lightweight Sequence Mode:** The Sequence (`-m 1`) and Design (`-j 2`) modules run **without** RDKit or Mordred. You only need those libraries if running Chemical (`-m 2`) or Structure (`-m 3`) predictions.
+- **Pinned Versions:** `scikit-learn` (`1.6.1`) and `xgboost` (`3.2.0`) are pinned intentionally. The serialized models in `models/` were trained with these exact versions; newer or older releases may load, but are not guaranteed to reproduce published predictions.
+- **Lightweight Sequence Mode:** The Sequence (`-m 1`) and Design (`-j 2`) modules run **without** RDKit or Mordred. You only need those libraries if running Chemical (`-m 2`) or Structure (`-m 3`) predictions.
 
 ---
 
@@ -171,13 +172,13 @@ pip install -r requirements.txt
 
 $$\text{HC}_{50} = 10^{-\text{pHC}_{50}}$$
 
-* **Higher $\text{HC}_{50}$** $\rightarrow$ **Less hemolytic** (safer therapeutic profile).
-* **Cut-off:** By established convention, peptides with $\text{HC}_{50} > 100\ \mu\text{M}$ are classified as **Non-hemolytic**.
+- **Higher $\text{HC}_{50}$** $\rightarrow$ **Less hemolytic** (safer therapeutic profile).
+- **Cut-off:** By established convention, peptides with $\text{HC}_{50} > 100\ \mu\text{M}$ are classified as **Non-hemolytic**.
 
 🔹 **Available Models**
-* **Model 1 — Sequence (MAP):** Amino acid composition + modification tags + D/L stereochemistry counts.
-* **Model 2 — Chemical (SMILES):** 2D molecular descriptors computed via Mordred.
-* **Model 3 — Structure (PDB):** 2D molecular descriptors extracted from 3D PDB structures.
+- **Model 1 — Sequence (MAP):** Amino acid composition + modification tags + D/L stereochemistry counts.
+- **Model 2 — Chemical (SMILES):** 2D molecular descriptors computed via Mordred.
+- **Model 3 — Structure (PDB):** 2D molecular descriptors extracted from 3D PDB structures.
 
 ---
 
@@ -293,10 +294,10 @@ Results are saved in **CSV format** (`output.csv` by default).
 
 ### 🔹 How the Design Module Works
 
-* Every standard residue position in each input peptide is systematically substituted with each of the other 19 canonical amino acids and scored using the Sequence model (`-m 1`).
-* **Modification Preservation:** Terminal tags (`{nt:Acet}`, `{ct:Amid}`, `{cyc:N-C}`), stereochemistry tags (`{d}`), and non-natural residues (`{nnr:...}`) remain untouched across all generated variants. Non-natural residue positions are preserved as-is without substitution.
-* **Batch Lead Support:** Multiple lead sequences can be submitted in a single FASTA file; `Fold_Change_vs_WT` is calculated independently against each lead's respective wild-type score.
-* **Limits:** Maximum 50 residues per lead peptide ($50 \times 19 = 950$ variants) using the Sequence model (`-m 1`) only.
+- Every standard residue position in each input peptide is systematically substituted with each of the other 19 canonical amino acids and scored using the Sequence model (`-m 1`).
+- **Modification Preservation:** Terminal tags (`{nt:Acet}`, `{ct:Amid}`, `{cyc:N-C}`), stereochemistry tags (`{d}`), and non-natural residues (`{nnr:...}`) remain untouched across all generated variants. Non-natural residue positions are preserved as-is without substitution.
+- **Batch Lead Support:** Multiple lead sequences can be submitted in a single FASTA file; `Fold_Change_vs_WT` is calculated independently against each lead's respective wild-type score.
+- **Limits:** Maximum 50 residues per lead peptide ($50 \times 19 = 950$ variants) using the Sequence model (`-m 1`) only.
 
 ---
 
